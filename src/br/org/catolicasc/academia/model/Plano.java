@@ -2,17 +2,17 @@ package br.org.catolicasc.academia.model;
 
 public class Plano {
 
-	private int id;
+	private long id;
 	private String nome;
 	private String descricao;
-	private String valor;
+	private double valor;
 	private int aulas;
 
-	public int getId() {
+	public long getId() {
 		return this.id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
@@ -32,11 +32,11 @@ public class Plano {
 		this.descricao = descricao;
 	}
 
-	public String getValor() {
+	public double getValor() {
 		return this.valor;
 	}
 
-	public void setValor(String valor) {
+	public void setValor(double valor) {
 		this.valor = valor;
 	}
 
