@@ -2,6 +2,9 @@ package br.org.catolicasc.academia.model;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Matricula {
 	
 	private Long id;
