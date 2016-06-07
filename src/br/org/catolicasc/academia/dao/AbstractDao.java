@@ -1,7 +1,9 @@
 package br.org.catolicasc.academia.dao;
 
 import java.io.Serializable;
+
 import java.lang.reflect.ParameterizedType;
+import java.util.List;
 
 import org.hibernate.Criteria;
 import org.hibernate.Session;
@@ -22,23 +24,28 @@ public abstract class AbstractDao<PK extends Serializable, T> {
 	private SessionFactory sessionFactory;
 
 	protected Session getSession() {
-		return this.sessionFactory.getCurrentSession();
+		return sessionFactory.getCurrentSession();
 	}
 
 	public T getByKey(PK key) {
-		return this.getSession().get(this.persistentClass, key);
+		return (T) getSession().get(persistentClass, key);
 	}
 
 	public void persist(T entity) {
-		this.getSession().persist(entity);
+		getSession().persist(entity);
 	}
 
 	public void delete(T entity) {
-		this.getSession().delete(entity);
+		getSession().delete(entity);
+	}
+
+	@SuppressWarnings("unchecked")
+	public List<T> findAll(T entity) {
+		return (List<T>) createEntityCriteria().list();
 	}
 
 	protected Criteria createEntityCriteria() {
-		return this.getSession().createCriteria(this.persistentClass);
+		return getSession().createCriteria(persistentClass);
 	}
 
 }
