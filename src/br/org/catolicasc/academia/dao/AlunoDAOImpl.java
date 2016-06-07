@@ -18,14 +18,14 @@ public class AlunoDAOImpl extends AbstractDao<Long, Aluno> implements AlunoDAO {
 	}
 
 	@Override
-	public void deleteAlunoByCPF(int cpf) {
+	public void deleteAlunoByCPF(Long cpf) {
 		Query query = getSession().createSQLQuery("delete from Aluno where cpf = :cpf");
-		query.setInteger("cpf", cpf);
+		query.setLong("cpf", cpf);
 		query.executeUpdate();
 	}
 
 	@Override
-	public Aluno findAlunoByCPF(int cpf) {
+	public Aluno findAlunoByCPF(Long cpf) {
 		Criteria criteria = createEntityCriteria();
 		criteria.add(Restrictions.eq("cpf", cpf));
 		return (Aluno) criteria.uniqueResult();

@@ -44,7 +44,7 @@ public class AlunoServiceImpl implements AlunoService {
 
 	
 	@Override
-	public void deleteAlunoByCPF(int cpf) {
+	public void deleteAlunoByCPF(Long cpf) {
 		dao.deleteAlunoByCPF(cpf);
 	}
 
@@ -54,12 +54,12 @@ public class AlunoServiceImpl implements AlunoService {
 	}
 
 	@Override
-	public Aluno findAlunoByCPF(int cpf) {
+	public Aluno findAlunoByCPF(Long cpf) {
 		return dao.findAlunoByCPF(cpf);
 	}
 
 	@Override
-	public boolean isAlunoCPFUnique(Long id, int cpf) {
+	public boolean isAlunoCPFUnique(Long id, Long cpf) {
 		Aluno aluno = dao.findAlunoByCPF(cpf);
 		return (aluno == null || ((id != null) && (aluno.getId() == id)));
 	}

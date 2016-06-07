@@ -6,8 +6,8 @@ import br.org.catolicasc.academia.model.Aluno;
 
 public interface AlunoDAO {
 	Aluno findById(Long id);
-	void deleteAlunoByCPF(int cpf);
-	Aluno findAlunoByCPF(int cpf);
+	void deleteAlunoByCPF(Long cpf);
+	Aluno findAlunoByCPF(Long cpf);
 	void save(Aluno aluno);
 	List<Aluno> findAll();
 }

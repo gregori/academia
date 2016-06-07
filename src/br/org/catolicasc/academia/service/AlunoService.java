@@ -8,8 +8,8 @@ public interface AlunoService {
 	Aluno findById(Long id);
 	void save(Aluno aluno);
 	void update(Aluno aluno);
-	void deleteAlunoByCPF(int cpf);
+	void deleteAlunoByCPF(Long cpf);
 	List<Aluno> findAll();
-	Aluno findAlunoByCPF(int cpf);
-	boolean isAlunoCPFUnique(Long id, int cpf);
+	Aluno findAlunoByCPF(Long cpf);
+	boolean isAlunoCPFUnique(Long id, Long cpf);
 }
