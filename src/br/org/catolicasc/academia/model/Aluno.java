@@ -2,12 +2,31 @@ package br.org.catolicasc.academia.model;
 
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+@Entity
 public class Aluno {
-	
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
+	@NotNull
+	@Size(min=3, max=70)
 	private String nome;
+	@NotNull
 	private String endereco;
+	@NotNull
+	@Column(unique=true)
 	private int cpf;
+	@NotNull
+	@DateTimeFormat(pattern="dd/MM/yyyy") 
 	private Date dtNascimento;
 	
 	public long getId() {
