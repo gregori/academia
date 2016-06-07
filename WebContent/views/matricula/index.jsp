@@ -8,7 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Matricula</title>
 <link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css" />
+	href="../assets/stylesheets/semantic.min.css" />
 </head>
 <body>
 	<div class="ui fixed inverted menu">
@@ -72,8 +72,8 @@
 	</div>
 
 	<script type="text/javascript"
-		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+		src="../assets/javascripts/jquery.min.js"></script>
 	<script type="text/javascript"
-		src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+		src="../assets/javascripts/semantic.min.js"></script>
 </body>
 </html>
