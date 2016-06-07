@@ -5,7 +5,7 @@ import java.util.Date;
 public class Presenca {
 
 	private long id;
-	private String aluno;
+	private Aluno aluno;
 	private Date dtPresenca;
 
 	public long getId() {
@@ -16,11 +16,11 @@ public class Presenca {
 		this.id = id;
 	}
 
-	public String getAluno() {
+	public Aluno getAluno() {
 		return aluno;
 	}
 
-	public void setAluno(String aluno) {
+	public void setAluno(Aluno aluno) {
 		this.aluno = aluno;
 	}
 
