@@ -1,5 +1,8 @@
 package br.org.catolicasc.academia.model;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Plano {
 
 	private long id;
