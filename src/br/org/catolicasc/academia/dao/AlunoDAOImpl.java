@@ -5,9 +5,11 @@ import java.util.List;
 import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.criterion.Restrictions;
+import org.springframework.stereotype.Repository;
 
 import br.org.catolicasc.academia.model.Aluno;
 
+@Repository("alunoDao")
 public class AlunoDAOImpl extends AbstractDao<Long, Aluno> implements AlunoDAO {
 
 	@Override
