@@ -91,7 +91,7 @@ public class AlunoController {
 	 * Este método vai apagar um aluno pelo seu CPF (podia ser pelo ID também)
 	 */
 	@RequestMapping(value = { "/delete/{cpf}" }, method = RequestMethod.GET)
-	public String apagaAluno(@PathVariable int cpf) {
+	public String apagaAluno(@PathVariable Long cpf) {
 		service.deleteAlunoByCPF(cpf);
 		return "redirect:/aluno/list";
 	}

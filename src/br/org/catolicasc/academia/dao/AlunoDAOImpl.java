@@ -1,5 +1,6 @@
 package br.org.catolicasc.academia.dao;
 
+import java.util.Date;
 import java.util.List;
 
 import org.hibernate.Criteria;
@@ -8,6 +9,7 @@ import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
 
 import br.org.catolicasc.academia.model.Aluno;
+import br.org.catolicasc.academia.model.Presenca;
 
 @Repository("alunoDao")
 public class AlunoDAOImpl extends AbstractDao<Long, Aluno> implements AlunoDAO {
@@ -39,6 +41,12 @@ public class AlunoDAOImpl extends AbstractDao<Long, Aluno> implements AlunoDAO {
 	@Override
 	public List<Aluno> findAll() {
 		return super.findAll();
+	}
+
+	@Override
+	public List<Presenca> findPresencasByDate(Date dtInicial, Date dtFinal) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
