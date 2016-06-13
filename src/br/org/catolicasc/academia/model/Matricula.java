@@ -8,6 +8,8 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 @Entity
 public class Matricula {
 	
@@ -17,9 +19,11 @@ public class Matricula {
 	private Long id;
 	
 	@NotNull
+	@DateTimeFormat(pattern="dd/MM/yyyy")
 	private Date data;
 	
 	@NotNull
+	@DateTimeFormat(pattern="dd/MM/yyyy")
 	private Date validade;
 	
 	@NotNull
