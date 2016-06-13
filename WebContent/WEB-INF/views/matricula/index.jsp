@@ -61,7 +61,7 @@
 			<tfoot class="full-width">
 				<tr>
 					<th colspan="4">
-						<div onclick="location.href='/matricula/car/add';"
+						<div onclick="location.href='/matricula/add';"
 							class="ui right floated small primary labeled icon button">
 							<i class="plus icon"></i> Adicionar matricula
 						</div>
