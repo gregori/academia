@@ -1,7 +1,5 @@
 package br.org.catolicasc.academia.dao;
 
-import java.util.List;
-
 import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.criterion.Restrictions;
