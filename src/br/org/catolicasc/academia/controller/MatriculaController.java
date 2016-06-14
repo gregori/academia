@@ -25,9 +25,9 @@ public class MatriculaController {
 	
 	@RequestMapping(value = { "/", "/list" }, method = RequestMethod.GET)
 	public String listaMatriculas(Model model) {
-		List<Matricula> matriculas = service.findAll();
-		model.addAttribute("matriculas", matriculas);
-		return "matricula/index";
+//		List<Matricula> matriculas = service.findAll();
+//		model.addAttribute("matriculas", matriculas);
+		return "aluno/list";
 	}
 	
 	@RequestMapping(value = { "/new" }, method = RequestMethod.GET)
