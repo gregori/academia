@@ -2,7 +2,6 @@ package br.org.catolicasc.academia.service;
 
 import java.util.List;
 
-import br.org.catolicasc.academia.model.Aluno;
 import br.org.catolicasc.academia.model.Matricula;
 
 public interface MatriculaService {

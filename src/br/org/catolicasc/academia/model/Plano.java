@@ -66,4 +66,12 @@ public class Plano {
 		this.aulas = aulas;
 	}
 
+	public List<Matricula> getMatriculas() {
+		return matriculas;
+	}
+
+	public void setMatriculas(List<Matricula> matriculas) {
+		this.matriculas = matriculas;
+	}
+
 }
