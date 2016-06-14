@@ -29,7 +29,7 @@ public class PresencaController {
 	public String listaPresenca(Model model) {
 		List<Presenca> presencas = service.findAll();
 		model.addAttribute("presencas", presencas);
-		return "presenca/lista";
+		return "presenca/list";
 	}
 
 	@RequestMapping(value = { "/new" }, method = RequestMethod.GET)

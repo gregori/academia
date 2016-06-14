@@ -1,17 +1,9 @@
 package br.org.catolicasc.academia.dao;
 
-import java.util.Date;
 import java.util.List;
-
-import org.hibernate.Criteria;
-import org.hibernate.Query;
-import org.hibernate.criterion.CriteriaSpecification;
-import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
 
-import br.org.catolicasc.academia.model.Aluno;
 import br.org.catolicasc.academia.model.Matricula;
-import br.org.catolicasc.academia.model.Presenca;
 
 @Repository("alunoDao")
 public class MatriculaDAOImpl extends AbstractDao<Long, Matricula> implements MatriculaDAO {

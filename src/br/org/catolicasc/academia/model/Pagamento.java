@@ -2,11 +2,19 @@ package br.org.catolicasc.academia.model;
 
 import java.util.Date;
 
-public class Pagamento {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
+@Entity
+public class Pagamento {
+	@Id
+	@GeneratedValue
 	private Long id;
 	private Date dtPagamento;
 	private int valor;
+	@ManyToOne
 	private Aluno aluno;
 
 	public Long getId() {

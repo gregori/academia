@@ -32,7 +32,7 @@ public class AlunoController {
 	public String listaAlunos(Model model) {
 		List<Aluno> alunos = service.findAll();
 		model.addAttribute("alunos", alunos);
-		return "aluno/lista";
+		return "aluno/list";
 	}
 	
 	/*
