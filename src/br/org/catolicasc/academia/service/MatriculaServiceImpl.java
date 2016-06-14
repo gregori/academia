@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import br.org.catolicasc.academia.dao.MatriculaDAO;
 import br.org.catolicasc.academia.model.Matricula;
 
-@Service("alunoService")
+@Service("matriculaService")
 @Transactional
 public class MatriculaServiceImpl implements MatriculaService {
 
