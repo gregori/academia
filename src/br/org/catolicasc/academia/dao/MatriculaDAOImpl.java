@@ -1,11 +1,13 @@
 package br.org.catolicasc.academia.dao;
 
 import java.util.List;
+
+import org.hibernate.Query;
 import org.springframework.stereotype.Repository;
 
 import br.org.catolicasc.academia.model.Matricula;
 
-@Repository("alunoDao")
+@Repository("matriculaDao")
 public class MatriculaDAOImpl extends AbstractDao<Long, Matricula> implements MatriculaDAO {
 
 	@Override

@@ -51,7 +51,7 @@ public class MatriculaController {
 	}
 	
 	@RequestMapping(value = { "/edit/{id}" }, method = RequestMethod.GET)
-	public String editaMatriculaForm(@PathVariable int id, Model model) {
+	public String editaMatriculaForm(@PathVariable long id, Model model) {
 		Matricula matricula = service.findById(id);
 		model.addAttribute("matricula", matricula);
 		model.addAttribute("edicao", true);
@@ -70,7 +70,7 @@ public class MatriculaController {
 	}
 	
 	@RequestMapping(value = { "/delete/{id}" }, method = RequestMethod.GET)
-	public String apagaMatricula(@PathVariable int id) {
+	public String apagaMatricula(@PathVariable long id) {
 		service.delete(id);
 		return "redirect:/matricula/list";
 	}
