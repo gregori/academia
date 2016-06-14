@@ -4,7 +4,7 @@ import org.springframework.stereotype.Repository;
 
 import br.org.catolicasc.academia.model.Matricula;
 
-@Repository("alunoDao")
+@Repository("matriculaDao")
 public class MatriculaDAO extends AbstractDao<Long, Matricula> {
 
 	public MatriculaDAO() {

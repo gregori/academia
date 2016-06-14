@@ -2,9 +2,16 @@ package br.org.catolicasc.academia.model;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+@Entity
 public class Presenca {
-
+	@Id
+	@GeneratedValue
 	private long id;
+	@ManyToOne
 	private Aluno aluno;
 	private Date dtPresenca;
 
