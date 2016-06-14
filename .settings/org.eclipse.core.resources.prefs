@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
 encoding//src/br/org/catolicasc/academia/dao/PresencaDAOImpl.java=UTF-8
 encoding//src/br/org/catolicasc/academia/service/AlunoServiceImpl.java=UTF-8
+encoding//src/br/org/catolicasc/academia/service/MatriculaServiceImpl.java=UTF-8
 encoding/<project>=UTF-8
