@@ -2,8 +2,6 @@ package br.org.catolicasc.academia.dao;
 
 import java.util.List;
 
-import org.springframework.stereotype.Repository;
-
 import br.org.catolicasc.academia.model.Matricula;
 
 public interface MatriculaDAO {
