@@ -1,17 +1,22 @@
 package br.org.catolicasc.academia.controller;
 
+import java.util.List;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
 import br.org.catolicasc.academia.model.Matricula;
 import br.org.catolicasc.academia.service.MatriculaService;
 
+@Controller
 @RequestMapping("/matricula")
 public class MatriculaController {
 	
@@ -23,9 +28,9 @@ public class MatriculaController {
 	
 	@RequestMapping(value = { "/", "/list" }, method = RequestMethod.GET)
 	public String listaMatriculas(Model model) {
-//		List<Matricula> matriculas = service.findAll();
-//		model.addAttribute("matriculas", matriculas);
-		return "aluno/list";
+		List<Matricula> matriculas = service.findAll();
+		model.addAttribute("matriculas", matriculas);
+		return "matricula/list";
 	}
 	
 	@RequestMapping(value = { "/new" }, method = RequestMethod.GET)
